@@ -70,6 +70,25 @@ public class Complex {
         im += b.im;
         return this;
     }
+        /**
+     * Subtract operation.
+     * @param b subtrahend
+     * @return this Complex object whose value is (this - b)
+     */
+    public Complex minus(Complex b) {
+        re -= b.re;
+        im -= b.im;
+        return this;
+    }
+
+    /**
+     * Conjugate operation.
+     * @return this Complex object conjugated
+     */
+    public Complex conjugate() {
+        im = -im;
+        return this;
+    }
 
     /**
      * Multiply operation.
